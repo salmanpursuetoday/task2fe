@@ -36,3 +36,78 @@
     transform: rotate(360deg);
   }
 }
+
+.headig2{
+  font-size: 25px;
+  color: #0E0255;
+}
+
+.heading1{
+  font-size: 45px;
+  color: #0E0255;
+  font-weight: bold;
+}
+
+.result-criteria{
+  background-color: #524985;
+  width: fit-content;
+  padding: 1% 25% 0.1% 25%;
+  border-radius: 15px;
+  line-height: 7px;
+}
+
+.search-by-rollno{
+  background-color: green;
+  border-radius: 15px;
+}
+
+.roll-no-input{
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 45px;
+  border-color: #0E0255;
+  padding: 2%;
+  color: #0E0255;
+  width: 75%;
+}
+
+.get-result-button{
+  background-color: #625991;
+}
+
+.enter-rollno{
+  color: #0E0255;
+}
+
+.search-div{
+  border: 1px solid #ccc2c2;
+  border-radius: 10px;
+  padding-top: 3px;
+  background-color: #f7f2f2;
+}
+
+.link{
+  color: rgb(133, 13, 13);
+  font-weight: bold;
+}
+
+.link a{
+  text-decoration: underline;
+}
+
+.link a:hover{
+  color: rgb(133, 13, 13);
+
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

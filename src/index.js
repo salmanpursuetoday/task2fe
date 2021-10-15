@@ -4,9 +4,13 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import AdminProvider from "./utils/userContext";
+
 ReactDOM.render(
   <React.StrictMode>
+    <AdminProvider>
     <App />
+    </AdminProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

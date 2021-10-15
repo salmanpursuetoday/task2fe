@@ -1,0 +1,9 @@
+
+
+.styled-from{
+  border: 1px solid rgb(221, 215, 215);
+  background-color: rgb(245, 245, 245);
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 10%;
+}

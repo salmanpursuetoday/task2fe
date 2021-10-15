@@ -1,24 +1,26 @@
-import logo from './logo.svg';
+import React from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
 import './App.css';
+
+import RollNumber from './containers/RollNumber';
+import Result from './containers/Result';
+import Login from './admin/containers/Login';
+import AddResult from './admin/containers/AddResult';
+import AddStudent from './admin/containers/Student';
+import AdminPrivateRoute from './admin/AdminPrivateRoute';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Switch>
+        <Route path="/" component={RollNumber} exact />
+        <Route path="/result/:rollNumber" component={Result} exact />
+        <Route path="/login" component={Login} exact />
+        <AdminPrivateRoute path="/add-result" component={AddResult} exact />
+        <AdminPrivateRoute path="/add-student" component={AddStudent} exact />
+      </Switch>
+    </Router>
   );
 }
 
