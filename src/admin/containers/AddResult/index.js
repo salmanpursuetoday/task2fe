@@ -19,6 +19,7 @@ const AddResult = () => {
 
   const handleAddResult = async (data) => {
     const res = await axios.post('/result/create', data);
+    alert(res?.data?.message);
     return res?.data;
   }
 

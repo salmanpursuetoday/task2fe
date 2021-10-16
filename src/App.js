@@ -7,7 +7,8 @@ import RollNumber from './containers/RollNumber';
 import Result from './containers/Result';
 import Login from './admin/containers/Login';
 import AddResult from './admin/containers/AddResult';
-import AddStudent from './admin/containers/Student';
+import Students from './admin/containers/Student';
+import AddStudent from './admin/containers/Student/Add';
 import AdminPrivateRoute from './admin/AdminPrivateRoute';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Route path="/login" component={Login} exact />
         <AdminPrivateRoute path="/add-result" component={AddResult} exact />
         <AdminPrivateRoute path="/add-student" component={AddStudent} exact />
+        <AdminPrivateRoute path="/students" component={Students} exact />
       </Switch>
     </Router>
   );

@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react';
+import React, { useState } from 'react';
 import Header from '../Header';
 
 import './Style.css';
@@ -34,11 +34,18 @@ const AddResult = (props) => {
       math: Number(math)
     }
     const res = handleAddResult(data);
+    setUrdu(null);
+    setEnglish(null);
+    setIslamicEducation(null);
+    setPakistanStudies(null);
+    setPhysics(null);
+    setComputer(null);
+    setMath(null);
   }
 
   return (
     <div className="container-fluid">
-      <Header/>
+      <Header />
       <div className="row">
         <div className="col-md-3"></div>
         <div className="col-md-6 mt-5">
